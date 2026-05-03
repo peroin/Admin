@@ -1,21 +1,16 @@
 backend:
   name: github
   repo: peroin/Admin
-  branch: main # Sesuaikan dengan branch GitHub-mu
+  branch: main
 
-media_folder: "public/images/blog"
-public_folder: "/images/blog"
+media_folder: "public/images"
+public_folder: "/images"
 
 collections:
   - name: "blog"
-    label: "Artikel Kripto"
-    folder: "src/pages/blog" # Sesuaikan folder artikelmu
+    label: "Postingan"
+    folder: "src/pages/posts"
     create: true
-    slug: "{{slug}}"
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "../../layouts/MarkdownLayout.astro" }
-      - { label: "Judul Artikel", name: "title", widget: "string" }
-      - { label: "Deskripsi SEO", name: "description", widget: "string" }
-      - { label: "Tanggal", name: "pubDate", widget: "datetime" }
-      - { label: "Isi Artikel", name: "body", widget: "markdown" }
-
+      - { label: "Judul", name: "title", widget: "string" }
+      - { label: "Isi", name: "body", widget: "markdown" }
