@@ -1,17 +1,5 @@
-cat <<EOF > package.json
 {
   "name": "peroin-admin",
-  "type": "module",
   "version": "1.0.0",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "astro": "^4.0.0"
-  }
+  "scripts": { "build": "astro build" }
 }
-EOF
