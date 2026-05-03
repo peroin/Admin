@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: peroin/Admin
   branch: main # Sesuaikan dengan branch GitHub-mu
 
 media_folder: "public/images/blog"
